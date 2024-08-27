@@ -1,0 +1,7 @@
+The module of the stdlib is 'calc'.
+To use it:
+calc <expression>
+
+For example:
+calc 3+4
+calc (8*9+2)/3+(-2%4//3)

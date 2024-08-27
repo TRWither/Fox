@@ -1,0 +1,24 @@
+The module of the stdlib is 'text'.
+
+To use it:
+text <command> <txt>
+
+Upper case:
+text upper hello
+Output: HELLO
+
+Lower case:
+text lower HELLO
+Output: hello
+
+Invert:
+text invert World!
+Output: !dlroW
+
+Output:
+text output Apple
+Output: Apple
+
+Length:
+text length tree
+Output: 4

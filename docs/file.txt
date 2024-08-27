@@ -1,0 +1,22 @@
+The module of the stdlib is 'file'.
+
+To use it:
+file <command> <filename> (<write>)
+
+Create a file:
+file make example.txt
+
+Remove a file:
+file remove example.txt
+
+Read a file:
+file read example.txt
+
+Write in a file:
+file write example.txt This is an example file.
+
+Empty a file:
+file empty example.txt
+
+Find a file:
+file find example.txt
