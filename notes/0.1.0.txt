@@ -1,0 +1,20 @@
+Version 0.1.0
+
+Standard library (stdlib):
+- calc
+- file
+| read
+| write
+| empty
+| make
+| remove
+| find
+- text
+| out
+| length
+| upper
+| lower
+| invert
+
+Basic commands:
+exit
