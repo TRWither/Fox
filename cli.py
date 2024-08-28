@@ -29,7 +29,7 @@ def main():
         
         elif s == "text":
             if len(cmd) < 3:
-                print("Usage: text <command> <text> [<replace> <by>]")
+                print("Usage: text <command> <text>")
             else:
                 command = cmd[1]
                 txt = cmd[2]
