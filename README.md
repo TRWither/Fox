@@ -36,11 +36,15 @@ fox
 ```
 
 ## Some examples
+### 1. Check if a file exists
 ```
-/ calc 3+5
-8
-/ text invert Hello!
-!olleH
-/ file remove path
-File removed successfully!
+/ file find path/to/your/file
+```
+### 2. Reverse a string
+```
+/ text reverse "Hello world!"
+```
+### 3. Some maths
+```
+/ 3*(5+8/(-9))+12*(-3.5)+4//5%8
 ```
