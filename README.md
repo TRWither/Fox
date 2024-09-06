@@ -56,3 +56,5 @@ Then, source the .bashrc file and run Fox directly from the terminal:
 source ~/.bashrc
 fox
 ```
+![GitHub stars](https://img.shields.io/github/stars/TRWither/Fox?style=social)
+![License](https://img.shields.io/github/license/TRWither/Fox)
