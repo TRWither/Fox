@@ -1,50 +1,58 @@
 # The Fox Programming Language
-Fox is a minimalist programming language that works solely via the command line. It can be used to perform simple tasks, such as simple arithmetic operations and string and file manipulation. The code cannot be written to a source file.
+**Fox** is a minimalist, command-line programming language designed for quick and simple tasks. Fox doesn't require source files; everything happens directly in the terminal, making it an excellent choice for performing arithmetic operations, string manipulations, and file operations in an efficient, no-frills way.
 
-## Functionnalities
-**1. Arithmetic operations**
-You can perform simple operations such as addition (+), subtraction (-), multiplication (*), division (/), integer division (//) and modulo (%). You can also use parentheses and negative numbers, both integers and floats.
+## Features
+### 1. Arithmetic operations
+Fox supports basic arithmetic operations:
+- Addition (`+`), substraction (`-`), multiplication (`*`), division (`/`), integer division (`//`), modulo (`%`)
+- Supports parentheses and negative numbers for both integers and floats.
+#### Example:
+```
+/ 3*(5+8/(-9))+12*(-3.5)+4//5%8
+```
+### 2. Text manipulation
+You can easily manipulate strings in Fox:
+- Convert a string to **uppercase** or **lowercase**
+- **Reverse** a string
+- Get the **length** of a string
+- **Print** a string to the output
+#### Example:
+```
+/ text reverse Hello world!
+```
 
-**2. Text manipulation**
-You can also perform the following operations on strings: uppercase or lowercase all characters, invert a string, obtain the length of a string or print a string.
-
-**3. File manipulation**
-You can also manipulate files. You can create, delete, search, edit, read and empty files.
+### 3. File manipulation
+Fox provides basic file manipulation commands:
+- **Create**, **delete**, **search**, **edit** and **empty** files
+#### Example:
+```
+/ file find /path/to/your/file
+```
 
 ## Installation
-### Linux
-**Step 1: clone the repository**
-```
+### On Linux
+1. Clone the repository:
+```bash
 git clone https://github.com/TRWither/Fox
 ```
-**Step 2: run the interpreter**
-```
+2. Run the interpreter:
+```bash
 chmod +x /path/to/FOX/cli.py
 python3.x /path/to/FOX/cli.py
 ```
-**Step 3 (Optionnal): create a custom command to run it easier**
+3. (Optional) Add a custom command to easily run Fox:
 ```bash
-your_editor ~/.bashrc          # Or similar file
-# In .bashrc:
+your_editor ~/.bashrc
+```
+Create a custom command in your .bashrc:
+```bash
 fox() {
     chmod +x /path/to/FOX/cli.py
-    python3.11 /path/to/FOX/cli.py
+    python3.x /path/to/FOX/cli.py
 }
-# Close your editor
+```
+Then, source the .bashrc file and run Fox directly from the terminal:
+```bash
 source ~/.bashrc
 fox
-```
-
-## Some examples
-### 1. Check if a file exists
-```
-/ file find path/to/your/file
-```
-### 2. Reverse a string
-```
-/ text reverse "Hello world!"
-```
-### 3. Some maths
-```
-/ 3*(5+8/(-9))+12*(-3.5)+4//5%8
 ```
